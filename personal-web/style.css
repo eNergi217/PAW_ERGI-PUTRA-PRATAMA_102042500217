@@ -1,0 +1,239 @@
+/* CSS DASAR */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background-color: #f1f5f9;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    margin-bottom: 30px;
+}
+
+
+header h1 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+header p {
+    color: #cbd5e1;
+}
+
+
+/* SECTION */
+
+section {
+    width: 80%;
+
+    max-width: 800px;
+
+    margin: 25px auto;
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+section h2 {
+    margin-bottom: 15px;
+
+    color: #111827;
+}
+
+
+/* PROFILE */
+
+.profile {
+    text-align: center;
+}
+
+
+/* FOTO */
+
+.profile img {
+    width: 150px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #e2e8f0;
+
+    margin-bottom: 15px;
+}
+
+
+.profile h2 {
+    font-size: 25px;
+}
+
+
+/* SOCIAL MEDIA */
+
+.social {
+    text-align: center;
+}
+
+
+.social a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    background-color: #111827;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    margin: 5px;
+
+    border-radius: 8px;
+
+    transition: 0.2s;
+}
+
+
+.social a:hover {
+    background-color: #374151;
+
+    transform: translateY(-2px);
+}
+
+
+/* ABOUT */
+
+.about p {
+    text-align: justify;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 15px;
+}
+
+
+th {
+    background-color: #111827;
+
+    color: white;
+
+    padding: 12px;
+
+    text-align: center;
+}
+
+
+td {
+    padding: 12px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+
+/* DATE TIME */
+
+.datetime {
+    text-align: center;
+}
+
+
+#tanggal {
+    font-weight: bold;
+
+    color: #2563eb;
+
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+
+    background-color: #111827;
+
+    color: white;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    section {
+        width: 92%;
+
+        padding: 20px;
+    }
+
+
+    header h1 {
+        font-size: 25px;
+    }
+
+
+    .profile img {
+        width: 120px;
+
+        height: 120px;
+    }
+
+
+    .social a {
+        display: block;
+
+        margin: 8px 0;
+    }
+
+}

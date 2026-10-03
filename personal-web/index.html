@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- HTML Favicon -->
+    <link rel="icon" type="image/png" href="foto.jpg">
+
+    <!-- Judul halaman -->
+    <title>Personal Web - Nama Kamu</title>
+
+    <!-- Menghubungkan CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font poppins-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>PERSONAL WEB</h1>
+        <p>Selamat datang di website personal saya</p>
+    </header>
+
+
+    <!-- FOTO -->
+    <section class="profile">
+
+        <!-- HTML Picture -->
+        <picture>
+            <img src="foto.jpg" alt="Foto Profil">
+        </picture>
+
+        <h2>Ergi Putra Pratama</h2>
+
+        <p>
+            NIM: 102142500217
+        </p>
+
+        <p>
+            Sistem Informasi | Fakultas Rekayasa Industri
+        </p>
+
+        <p> 
+            Telkom University
+        </p>
+
+    </section>
+
+
+    <!-- LINK SOSIAL MEDIA -->
+    <section class="social">
+
+        <h2>Media Sosial</h2>
+
+        <a href="https://github.com/" target="_blank">
+            GitHub
+        </a>
+
+        <a href="https://instagram.com/" target="_blank">
+            Instagram
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank">
+            LinkedIn
+        </a>
+
+    </section>
+
+
+    <!-- TENTANG SAYA -->
+    <section class="about">
+
+        <h2>Tentang Saya</h2>
+
+        <p>
+            Halo, saya Ergi Putra Pratama saya adalah mahasiswa yang sedang mempelajari
+            sistem informasi matkul pengembangan website.
+        </p>
+
+    </section>
+
+
+    <!-- KEAHLIAN -->
+    <section>
+
+        <h2>Keahlian</h2>
+
+        <table>
+
+            <tr>
+                <th>No</th>
+                <th>Keahlian</th>
+                <th>Tingkat</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>HTML</td>
+                <td>Basic</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>CSS</td>
+                <td>Basic</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Java</td>
+                <td>Basic</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Database</td>
+                <td>Basic</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- JADWAL -->
+    <section>
+
+        <h2>Aktivitas</h2>
+
+        <table>
+
+            <tr>
+                <th>Hari</th>
+                <th>Kegiatan</th>
+            </tr>
+
+            <tr>
+                <td>Senin</td>
+                <td>Kuliah</td>
+            </tr>
+
+            <tr>
+                <td>Selasa</td>
+                <td>Kuliah</td>
+            </tr>
+
+            <tr>
+                <td>Rabu</td>
+                <td>Kuliah</td>
+            </tr>
+
+            <tr>
+                <td>Kamis</td>
+                <td>Kuliah / GYM / Megerjakan Tugas / Hangout</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+
+    <!-- DATE AND TIME -->
+    <section class="datetime">
+
+        <h2>Tanggal dan Waktu</h2>
+
+        <p>
+            Website ini dibuat pada:
+        </p>
+
+        <p id="tanggal"></p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 eNergi217
+        </p>
+
+    </footer>
+
+
+    <!-- Javascript untuk tanggal dan waktu -->
+    <script>
+
+        function tampilkanWaktu() {
+
+            const sekarang = new Date();
+
+            const tanggal =
+                sekarang.toLocaleString("id-ID");
+
+            document.getElementById("tanggal").innerHTML =
+                tanggal;
+        }
+
+        tampilkanWaktu();
+
+        setInterval(tampilkanWaktu, 1000);
+
+    </script>
+
+</body>
+
+</html>
